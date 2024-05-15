@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Git commands</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 15% 73% 12%;
+                height: 100vh;
+			    justify-items: stretch;
+			    align-items: stretch;
+            }
+            header {
+                grid-row: 1/2;
+                background-color: rgb(55, 152, 255);
+                padding-left: 15px;
+            }
+            main {
+                grid-row: 2/3;
+            }
+            footer {
+                grid-row: 3/4;
+                background-color: rgb(19, 19, 33);
+                color: white;
+                text-align: center;
+            }
+            #h1 
+            {
+                color: black;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h2 {
+                color: white;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            table {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2 id="h1">Мій особистий блог</h2>
+            <h2>Анастасія Кухар</h2>
+        </header>
+        <main>
+            <table>
+                    <tr>
+                        <td>Create a Repository <br>
+                        From scratch -- Create a new repository</td>
+                        <td>Working with branches</td>
+                        <td>Make a change</td>
+                        <td>Synchronize</td>
+                    </tr>
+                    <tr>
+                        <td>&git init [project name]</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Download from repository <br>
+                        &git clone my_url</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Observe your Repository <br>
+                        List new or modified files not yet commited</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>&git status</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show the changes to files not yet staged <br>
+                        &git diff</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show the changes to staged files <br>
+                        &git diff --cached</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show all staged and unstaged files changes <br>
+                        &git diff HEAD</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show the changes between two commit:ids <br>
+                        &git diff commit commit2</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>List the change dates and authors of file <br>
+                        &git blame [file]</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show the file changes for a commit id and file <br> 
+                        &git ahow [commit] : [file]</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                    </tr>
+                    <tr>
+                        <td>Show full change history <br>
+                        &git log</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Show change history for file including diffs <br>
+                        &git log -p [file/directory]</td>
+                        <td>Рядок 1, Стовпець 2</td>
+                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Рядок 1, Стовпець 4</td>
+                        
+                    </tr>
+            </table>
+        </main>
+        <footer>
+            <p>Створено студенткою групи 101ТК </p>
+        </footer>
+    </body>
+</html>
