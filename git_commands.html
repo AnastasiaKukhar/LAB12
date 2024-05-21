@@ -5,18 +5,27 @@
             body {
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: 15% 73% 12%;
+                grid-template-rows: 15% 75% 10%;
                 height: 100vh;
 			    justify-items: stretch;
 			    align-items: stretch;
+                margin: 0;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: gray;
             }
+            b {
+                color: black; 
+                }
+            
             header {
                 grid-row: 1/2;
                 background-color: rgb(55, 152, 255);
                 padding-left: 15px;
+                border-bottom: 2px solid red;
             }
             main {
                 grid-row: 2/3;
+                overflow: auto;
             }
             footer {
                 grid-row: 3/4;
@@ -34,8 +43,40 @@
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             }
             table {
-                width: 100%;
-                height: 100%;
+                font-size: 14px;
+                width: calc(100% - 30px);
+                margin: auto;
+                
+            }
+            #z1 {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgb(157, 201, 244);
+            }
+            #z2 {
+                font-size: 22px;
+                font-weight: bold;
+                color: lightgreen;
+            }
+            #z3 {
+                font-size: 22px;
+                font-weight: bold;
+                color:olive ;
+            }
+            #z4 {
+                font-size: 22px;
+                font-weight: bold;
+                color: orangered;
+            }
+            #z5 {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgb(80, 80, 189);
+            }
+            #z6 {
+                font-size: 22px;
+                font-weight: bold;
+                color: orange ;
             }
         </style>
     </head>
@@ -47,38 +88,41 @@
         <main>
             <table>
                     <tr>
-                        <td>Create a Repository <br>
+                        <td id="z1">Create a Repository <br>
                         </td>
-                        <td>Working with branches <br>
+                        <td  id="z2">Working with branches <br>
                         </td>
-                        <td>Make a change</td>
-                        <td>Synchronize</td>
+                        <td  id="z3">Make a change</td>
+                        <td  id="z4">Synchronize</td>
                     </tr>
                     <tr>
-                        <td>From scratch -- Create a new repository <br>&git init [project name]</td>
+                        <td>From scratch -- Create a new repository <br><b>&git init [project name]</b></td>
                         <td>List all local branches <br>
-                            &git branch</td>
+                           <b >&git branch</b></td>
                         <td>Stage the files, ready to commit <br>
                         <b>&git add [file]</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>Get the latest changes from origin (no merge) <br>
+                        <b>&git fetch</b></td>
                     </tr>
                     <tr>
                         <td>Download from repository <br>
-                        &git clone my_url</td>
+                      <b>  &git clone my_url</b></td>
                         <td>List all branches, local and remote <br>
                         <b>&git branch -av</b></td>
                         <td>Stage all files ready to commit <br>
                         <b>git add .</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>Fetch the latest changes from origin and merge <br>
+                        <b>&git pull</b></td>
                     </tr>
                     <tr>
-                        <td>Observe your Repository <br>
+                        <td id="z5">Observe your Repository <br>
                         </td>
-                        <td>Switch to a branch, my_branch and update working directory <br>
+                        <td>Switch to a branch, my_branch <br> and update working directory <br>
                         <b>&git checkout my_branch</b></td>
                         <td>Commit all files to versioned history <br>
                         <b>&git commit -m "commit message"</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>Fetch the latest changes from origin and rebase <br>
+                        <b>&git pull --rebase</b></td>
                     </tr>
                     <tr>
                         <td>List new or modified files not yet commited<br> <b>&git status</b></td>
@@ -86,70 +130,72 @@
                         <b>&git branch new_branch</b></td>
                         <td>Commit all staged files to versioned history <br>
                         <b>&git commit -an "commit message"</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>Push local changes to origin <br>
+                        <b>&git push</b></td>
                     </tr>
                     <tr>
                         <td>Show the changes to files not yet staged <br>
-                        &git diff</td>
+                        <b>&git diff</b></td>
                         <td>Delete the branch called my_branch <br>
                         <b>&git branch -d my_branch</b></td>
                         <td>Unstaged file, keeping the file changes <br>
                         <b>git reset [file]</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td id="z6">Finally!</td>
                     </tr>
                     <tr>
                         <td>Show the changes to staged files <br>
-                        &git diff --cached</td>
+                        <b>&git diff --cached</b></td>
                         <td>Merge branch_a into branch_b <br>
                         <b>&git checkout branch_b <br>
                         &git merge branch_a</b></td>
                         <td>Revert everything to previous commit <br>
                         <b>&git reset --hard</b></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>When in doubt use git help <br>
+                        <b>&git command --help</b></td>
                     </tr>
                     <tr>
                         <td>Show all staged and unstaged files changes <br>
-                        &git diff HEAD</td>
+                        <b>&git diff HEAD</b></td>
                         <td>Tag the current commit <br>
                         <b>git tag my_tag</b></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td>Or visit <a href="https://training.github.com/">https://training.github.com/</a> <br>for official GitHub training</td>
                     </tr>
                     <tr>
                         <td>Show the changes between two commit:ids <br>
-                        &git diff commit commit2</td>
+                        <b>&git diff commit commit2 </b></td>
                         <td></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>List the change dates and authors of file <br>
-                        &git blame [file]</td>
+                        <b>&git blame [file]</b></td>
                         <td></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Show the file changes for a commit id and file <br> 
-                        &git ahow [commit] : [file]</td>
+                       <b>&git ahow [commit] : [file]</b></td>
                         <td></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>Show full change history <br>
-                        &git log</td>
+                       <b>&git log</b></td>
                         <td></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td></td>
                         
                     </tr>
                     <tr>
                         <td>Show change history for file including diffs <br>
-                        &git log -p [file/directory]</td>
+                       <b>&git log -p [file/directory]</b></td>
                         <td></td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 4</td>
+                        <td></td>
                         
                     </tr>
             </table>
