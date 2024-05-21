@@ -58,7 +58,8 @@
                         <td>From scratch -- Create a new repository <br>&git init [project name]</td>
                         <td>List all local branches <br>
                             &git branch</td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Stage the files, ready to commit <br>
+                        <b>&git add [file]</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
@@ -66,7 +67,8 @@
                         &git clone my_url</td>
                         <td>List all branches, local and remote <br>
                         <b>&git branch -av</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Stage all files ready to commit <br>
+                        <b>git add .</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
@@ -74,14 +76,16 @@
                         </td>
                         <td>Switch to a branch, my_branch and update working directory <br>
                         <b>&git checkout my_branch</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Commit all files to versioned history <br>
+                        <b>&git commit -m "commit message"</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
                         <td>List new or modified files not yet commited<br> <b>&git status</b></td>
                         <td>Created new branch called my_branch <br>
                         <b>&git branch new_branch</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Commit all staged files to versioned history <br>
+                        <b>&git commit -an "commit message"</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
@@ -89,7 +93,8 @@
                         &git diff</td>
                         <td>Delete the branch called my_branch <br>
                         <b>&git branch -d my_branch</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Unstaged file, keeping the file changes <br>
+                        <b>git reset [file]</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
@@ -98,7 +103,8 @@
                         <td>Merge branch_a into branch_b <br>
                         <b>&git checkout branch_b <br>
                         &git merge branch_a</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td>Revert everything to previous commit <br>
+                        <b>&git reset --hard</b></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
@@ -106,35 +112,35 @@
                         &git diff HEAD</td>
                         <td>Tag the current commit <br>
                         <b>git tag my_tag</b></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
                         <td>Show the changes between two commit:ids <br>
                         &git diff commit commit2</td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
                         <td>List the change dates and authors of file <br>
                         &git blame [file]</td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
                         <td>Show the file changes for a commit id and file <br> 
                         &git ahow [commit] : [file]</td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                     </tr>
                     <tr>
                         <td>Show full change history <br>
                         &git log</td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                         
                     </tr>
@@ -142,7 +148,7 @@
                         <td>Show change history for file including diffs <br>
                         &git log -p [file/directory]</td>
                         <td></td>
-                        <td>Рядок 1, Стовпець 3</td>
+                        <td></td>
                         <td>Рядок 1, Стовпець 4</td>
                         
                     </tr>
